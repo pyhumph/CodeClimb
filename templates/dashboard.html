@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/leaderboard.css" />
+</head>
+
+<body>
+    <h2>Welcome {{ student.name }}</h2>
+    <p>Your Marks: {{ student.marks }}</p>
+    <p>Your Rank: {{ rank }}</p>
+
+    <h3>Top 10 Leaderboard</h3>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Student ID</th>
+            <th>Marks</th>
+        </tr>
+        {% for i, s in enumerate(leaderboard, start=1) %}
+        <tr>
+            <td>{{ i }}</td>
+            <td>{{ s.student_id }}</td>
+            <td>{{ s.marks }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/logout">Logout</a>
+</body>
+
+</html>
