@@ -1,6 +1,6 @@
-# EduRank
+# CodeClimb
 
-EduRank is a student leaderboard and coding challenge platform built with **Flask**.  
+CodeClimb is a student leaderboard and coding challenge platform built with **Flask**.  
 It allows teachers to assign marks manually (initial version) and displays a dynamic **ranked leaderboard** with privacy.
 
 ## Features
